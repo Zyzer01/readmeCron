@@ -23,4 +23,4 @@ jobs:
           python update_readme.py
           git config --global user.name "David Onifade"
           git config --global user.email "davidicfola@gmail.com"
-          git commit -am "Update README" && git push https://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@github.com/Zyzer01/readmeCron.git
+          git commit -am "Update README" && git push https://${{ secrets.GH_PAT }}@github.com/Zyzer01/readmeCron.git
