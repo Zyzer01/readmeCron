@@ -1,0 +1,30 @@
+name: Update README
+
+on:
+  schedule:
+    - cron: '*/5 * * * *'  # Runs every 5 minutes
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Use Node.js 16
+        uses: actions/setup-node@v2
+        with:
+          node-version: '16'
+
+      - name: Check out code
+        uses: actions/checkout@v2
+
+      - name: Update README
+        run: |
+          # Run your script to update the README file here
+          python update_readme.py
+
+      - name: Commit and Push Changes
+        run: |
+          git config --global user.name "David Onifade"
+          git config --global user.email "davidicfola@gmail.com"
+          git commit -am "Update README"
+          git push origin HEAD
