@@ -21,6 +21,10 @@ jobs:
         run: |
           # Run your script to update the README file here
           python update_readme.py
+
+      - name: Commit and Push Changes
+        run: |
           git config --global user.name "David Onifade"
           git config --global user.email "davidicfola@gmail.com"
           git commit -am "Update README"
+          git push origin HEAD
