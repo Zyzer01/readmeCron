@@ -27,4 +27,4 @@ jobs:
           git config --global user.name "David Onifade"
           git config --global user.email "davidicfola@gmail.com"
           git commit -m "Update README"
-          git push https://${{ secrets.GITHUB_TOKEN }}@github.com/Zyzer01/readmeCron.git
+          git push https://github.com/Zyzer01/readmeCron.git
