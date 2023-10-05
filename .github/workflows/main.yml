@@ -26,5 +26,7 @@ jobs:
         run: |
           git config --global user.name "David Onifade"
           git config --global user.email "davidicfola@gmail.com"
+          git add README.md
           git commit -m "Update README"
-          git push https://github.com/Zyzer01/readmeCron.git
+          git push origin master
+
