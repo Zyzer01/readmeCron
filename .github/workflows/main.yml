@@ -16,8 +16,6 @@ jobs:
 
       - name: Check out code
         uses: actions/checkout@v2
-        with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Update README
         run: |
