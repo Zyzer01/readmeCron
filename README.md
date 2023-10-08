@@ -1,2 +1,2 @@
 # readmeCron
-Cron job
+Cron jobs
